@@ -2,6 +2,10 @@
 
 WebNetSec is a lightweight, privacy-focused browser extension designed to give you real-time visibility into your browser's traffic and provide essential security protections against bots, trackers, and malicious sites.
 
+
+<img width="433" height="745" alt="image" src="https://github.com/user-attachments/assets/e3c3b03a-61f4-4c2c-b1e8-963c4798f9c9" />
+
+
 ## 🛡️ Key Features
 
 ### 1. **Protection Suite**
@@ -54,3 +58,4 @@ Since this is a developer extension, you can install it directly into Chrome, Ed
 WebNetSec operates entirely locally on your device.
 *   No browsing history is sent to external servers.
 *   Traffic analysis happens within your browser.
+
