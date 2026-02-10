@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebNet</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        WebNetSec
+      </div>
+      <div style="font-size: 0.65rem; color: var(--text-secondary); margin-left: auto;">
+        <span style="color: var(--danger);">●</span> Threats
+        <span style="color: var(--safe); margin-left: 4px;">●</span> Safe
+      </div>
+    </div>
+
+    <!-- Security Scan (Moved to Top) -->
+    <div class="card">
+      <div class="section-title">Security Scan</div>
+      <p id="scanStatus" style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 12px;">Quick check for
+        current tab</p>
+      <button id="scanBtn" class="btn">Start Deep Scan</button>
+      <div id="scanResults"
+        style="display: none; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--glass-border);">
+        <div class="tab-item">
+          <span id="trustIndicator" class="indicator"></span>
+          <span id="trustText">Analyzing Reputation...</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-title">Protection Suite</div>
+      <div class="toggle-container">
+        <span>Anti-Virus</span>
+        <label class="switch">
+          <input type="checkbox" id="antivirusToggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="toggle-container">
+        <span>Bot Blocker</span>
+        <label class="switch">
+          <input type="checkbox" id="botBlockerToggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="toggle-container">
+        <span>Tracker Blocker</span>
+        <label class="switch">
+          <input type="checkbox" id="trackerBlockerToggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Analysis Tools Removed -->
+
+    <div class="card">
+      <div class="section-title">Active Traffic Monitoring</div>
+      <div id="trafficList" class="traffic-list">
+        <!-- Tab items will be injected here -->
+        <p style="color: var(--text-secondary); font-size: 0.85rem;">Listening for activity...</p>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>

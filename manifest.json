@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "WebNetSec",
+  "version": "1.0.0",
+  "description": "Real-time traffic visibility, security scanning, and antivirus protection for your browser.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "webRequest",
+    "declarativeNetRequest",
+    "notifications"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
